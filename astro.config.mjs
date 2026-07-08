@@ -16,7 +16,7 @@ export default defineConfig({
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/dr-rakesh-sarwal/practice.lifequality.org.in',
+          href: 'https://github.com/equal-society/practice.lifequality.org.in',
         },
       ],
 
