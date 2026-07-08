@@ -7,9 +7,7 @@ export default defineConfig({
 
   integrations: [
     starlight({
-
       title: 'Practice Knowledge System',
-
       description: 'Evidence into Practice',
 
       social: [
@@ -21,51 +19,13 @@ export default defineConfig({
       ],
 
       sidebar: [
-
         {
-          label: 'Health Topics',
+          label: 'Documentation',
           items: [
-            { slug: 'health-topics/index' },
+            { slug: 'index' },
           ],
         },
-
-        {
-          label: 'Lifestyle Interventions',
-          items: [
-            { slug: 'interventions/index' },
-          ],
-        },
-
-        {
-          label: 'Evidence Library',
-          items: [
-            { slug: 'evidence/index' },
-          ],
-        },
-
-        {
-          label: 'Clinical Guides',
-          items: [
-            { slug: 'guides/index' },
-          ],
-        },
-
-        {
-          label: 'Resources',
-          items: [
-            { slug: 'resources/index' },
-          ],
-        },
-
-        {
-          label: 'About',
-          items: [
-            { slug: 'about/index' },
-          ],
-        }
-
       ],
-
     }),
   ],
 });
