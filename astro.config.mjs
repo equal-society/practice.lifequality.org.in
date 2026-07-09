@@ -20,9 +20,28 @@ export default defineConfig({
 
       sidebar: [
         {
-          label: 'Documentation',
+          label: 'About PKS',
           items: [
             { slug: 'index' },
+            { slug: 'editorial' },
+            { slug: 'about' },
+          ],
+        },
+
+        {
+          label: 'Knowledge Base',
+          items: [
+            { slug: 'health-topics' },
+            { slug: 'interventions' },
+            { slug: 'evidence' },
+            { slug: 'guides' },
+          ],
+        },
+
+        {
+          label: 'Learning Resources',
+          items: [
+            { slug: 'learning-resources' },
           ],
         },
       ],
