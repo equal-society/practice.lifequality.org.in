@@ -23,8 +23,15 @@ export default defineConfig({
           label: 'About PKS',
           items: [
             { slug: 'index' },
-            { slug: 'editorial' },
             { slug: 'about' },
+            { slug: 'editorial' },
+          ],
+        },
+
+        {
+          label: 'Foundations',
+          items: [
+            { slug: 'foundations/evidence-to-health-gap' },
           ],
         },
 
@@ -35,6 +42,13 @@ export default defineConfig({
             { slug: 'interventions' },
             { slug: 'evidence' },
             { slug: 'guides' },
+          ],
+        },
+
+        {
+          label: 'Research Connections',
+          items: [
+            { slug: 'research-connections' },
           ],
         },
 
