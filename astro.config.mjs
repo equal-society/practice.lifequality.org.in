@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Practice Knowledge System',
-      description: 'Evidence into Practice',
+      description: 'Turning Evidence into Practice for Better Health',
 
       social: [
         {
@@ -20,18 +20,18 @@ export default defineConfig({
 
       sidebar: [
         {
-          label: 'About PKS',
+          label: 'Home',
           items: [
             { slug: 'index' },
-            { slug: 'about' },
-            { slug: 'editorial' },
           ],
         },
 
         {
-          label: 'Foundations',
+          label: 'About PKS',
           items: [
-            { slug: 'foundations/evidence-to-health-gap' },
+            { slug: 'about' },
+            { slug: 'editorial' },
+            { slug: 'practice-knowledge-system' },
           ],
         },
 
@@ -39,8 +39,8 @@ export default defineConfig({
           label: 'Knowledge Base',
           items: [
             { slug: 'health-topics' },
-            { slug: 'interventions' },
             { slug: 'evidence' },
+            { slug: 'interventions' },
             { slug: 'guides' },
           ],
         },

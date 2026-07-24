@@ -1,0 +1,22 @@
+---
+import { registerCitation } from '../lib/citations';
+
+const { id } = Astro.props;
+
+const number = registerCitation(id);
+---
+
+<a 
+  href={`#ref-${number}`}
+  id={`cite-${number}`}
+  class="citation"
+>
+  [{number}]
+</a>
+
+<style>
+.citation {
+  text-decoration: none;
+  margin-left: 3px;
+}
+</style>

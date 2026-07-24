@@ -1,0 +1,26 @@
+---
+import Cite from 'citation-js';
+import '@citation-js/plugin-bibtex';
+
+import bib from '../content/docs/references.bib?raw';
+
+import { getCitations } from '../lib/citations';
+
+const citedIds = getCitations();
+
+const cite = new Cite(bib);
+
+const references = cite.data.filter(
+  item => citedIds.includes(item.id)
+);
+
+const output = new Cite(references).format(
+  'bibliography',
+  {
+    format: 'html',
+    template: 'vancouver'
+  }
+);
+---
+
+<div class="references" set:html={output}></div>
