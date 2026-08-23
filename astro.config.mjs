@@ -1,11 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://practice.lifequality.org.in',
 
   integrations: [
+    sitemap(),
     starlight({
       title: 'Practice Knowledge System',
       description: 'Turning Evidence into Practice for Better Health',
